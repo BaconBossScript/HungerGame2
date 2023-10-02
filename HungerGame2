@@ -1,0 +1,107 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "BaconBoss Hub | Academy Adventures The Hunger Games", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+
+getgenv().tpPlace = "string"
+
+function Teleport(teleportPlace)
+    local player = game.Players.LocalPlayer
+    player.Character.HumanoidRootPart.CFrame = teleportPlace
+end
+
+
+local TpTab = Window:MakeTab({
+	Name = "Quest 1",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tp2Tab = Window:MakeTab({
+	Name = "Quest 2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+TpTab:AddButton({
+	Name = "Key 1",
+	Callback = function()
+        Teleport(game:GetService("Workspace").SCAVENGER_ITEMS.Chapter1ClassroomKeys.collectedClassroomKeys.Item1.Part.CFrame)
+    end
+}) 
+
+TpTab:AddButton({
+	Name = "Key 2",
+	Callback = function()
+        Teleport(game:GetService("Workspace").SCAVENGER_ITEMS.Chapter1ClassroomKeys.collectedClassroomKeys.Item2.Part.CFrame)
+    end
+}) 
+
+TpTab:AddButton({
+	Name = "Key 3",
+	Callback = function()
+        Teleport(game:GetService("Workspace").SCAVENGER_ITEMS.Chapter1ClassroomKeys.collectedClassroomKeys.Item3.Part.CFrame)
+    end
+}) 
+
+TpTab:AddButton({
+	Name = "Key 4",
+	Callback = function()
+        Teleport(game:GetService("Workspace").SCAVENGER_ITEMS.Chapter1ClassroomKeys.collectedClassroomKeys.Item4.Part.CFrame)
+    end
+}) 
+
+TpTab:AddButton({
+	Name = "Key 5",
+	Callback = function()
+        Teleport(game:GetService("Workspace").SCAVENGER_ITEMS.Chapter1ClassroomKeys.collectedClassroomKeys.Item5.Part.CFrame)
+    end
+}) 
+
+TpTab:AddButton({
+	Name = "Key 6",
+	Callback = function()
+        Teleport(game:GetService("Workspace").SCAVENGER_ITEMS.Chapter1ClassroomKeys.collectedClassroomKeys.Item6.Part.CFrame)
+    end
+}) 
+
+Tp2Tab:AddButton({
+	Name = "Key 1",
+	Callback = function()
+        Teleport(game:GetService("Workspace").SCAVENGER_ITEMS.Chapter1VaultKeys.collectedPaperVaultKeys.Item1.Part.CFrame)
+    end
+}) 
+
+Tp2Tab:AddButton({
+	Name = "Key 2",
+	Callback = function()
+        Teleport(game:GetService("Workspace").SCAVENGER_ITEMS.Chapter1VaultKeys.collectedPaperVaultKeys.Item2.Part.CFrame)
+    end
+}) 
+
+Tp2Tab:AddButton({
+	Name = "Key 3",
+	Callback = function()
+        Teleport(game:GetService("Workspace").SCAVENGER_ITEMS.Chapter1VaultKeys.collectedPaperVaultKeys.Item3.Part.CFrame)
+    end
+}) 
+
+Tp2Tab:AddButton({
+	Name = "Key 4",
+	Callback = function()
+        Teleport(game:GetService("Workspace").SCAVENGER_ITEMS.Chapter1VaultKeys.collectedPaperVaultKeys.Item4.Part.CFrame)
+    end
+}) 
+
+Tp2Tab:AddButton({
+	Name = "Key 5",
+	Callback = function()
+        Teleport(game:GetService("Workspace").SCAVENGER_ITEMS.Chapter1VaultKeys.collectedPaperVaultKeys.Item5.Part.CFrame)
+    end
+}) 
+
+Tp2Tab:AddButton({
+	Name = "Key 6",
+	Callback = function()
+        Teleport(game:GetService("Workspace").SCAVENGER_ITEMS.Chapter1VaultKeys.collectedPaperVaultKeys.Item6.Part.CFrame)
+    end
+}) 
